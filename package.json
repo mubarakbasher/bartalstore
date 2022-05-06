@@ -1,0 +1,29 @@
+{
+  "name": "bartal-app",
+  "version": "1.0.0",
+  "description": "online store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js ",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix bartal",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mubarakbasher/bartalstore.git"
+  },
+  "author": "Mubarak Wadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mubarakbasher/bartalstore/issues"
+  },
+  "homepage": "https://github.com/mubarakbasher/bartalstore#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16"
+  }
+}
