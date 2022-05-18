@@ -9,7 +9,7 @@ const connectDB = async () =>{
         });
         console.log("Successfuly connect")
     } catch (error) {
-        console.error(error)
+        console.error("Can't connect to the databaes")
         process.exit(1)
     }
 }

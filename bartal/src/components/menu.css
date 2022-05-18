@@ -2,11 +2,26 @@
     display: flex;
     margin: 0 30px;
 }
-
 .menu-item{
     display: flex;
     flex-direction: column;
     margin: 0 15px;
     align-items: center;
 }
+a{
+    text-decoration: none;
+}
 
+.menu-item{
+    color: #EFF2F1;
+}
+
+.menu-item:hover{
+    color: #f11602;
+}
+
+@media(max-width: 720px) {
+    .menu-items{
+       display: none; 
+    }
+}
