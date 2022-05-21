@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CloseIcon from '@mui/icons-material/Close';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './slideshow.css'
 
 function Slideshow({show , click}) {
@@ -12,7 +11,7 @@ function Slideshow({show , click}) {
   return (
     <div className={slideshowClass.join(" ")}>
       <ul className='side-show' onClick={click}>
-          <li>
+          <li className='close-icon'>
               <span><CloseIcon/></span>
           </li>
           <li>
@@ -33,12 +32,6 @@ function Slideshow({show , click}) {
           <li>
             <Link to="/account">
               <span>حسابي</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/cart">
-            <span><ShoppingCartIcon/></span>
-                <span>10</span>
             </Link>
           </li>
       </ul>

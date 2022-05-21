@@ -9,14 +9,14 @@ function Menu() {
         <div className='menu-items'>
             <Link to='/account'>
             <div className='menu-item'>
-                <span><PersonIcon/></span>
+                <PersonIcon/>
                 <span>حسابي</span>
             </div>
             </Link>
             <Link to="/cart">
             <div className='menu-item'>
-                <span><ShoppingCartIcon/></span>
                 <span>10</span>
+                <ShoppingCartIcon/>
             </div>
             </Link>
         </div>
